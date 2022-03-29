@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking AI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <canvas style="width: 85vw; height: 85vh;"></canvas>
+        <div class="hud">
+            <p class="hud-prefix">Generation:</p> <p id="generation"></p>
+            <p class="hud-prefix">Level:</p> <p id="level"></p>
+            <p class="hud-prefix">Parked Cars:</p> <p id="parked-cars"></p>
+        </div>
+        <div class="slidecontainer">
+            <p class="slider-label">Computational speed:</p>
+            <input type="range" min="1" max="401" value="1" class="slider" id="myRange">
+            <a class="btn" id="save-button">Save</a>
+            <a class="btn" id="show-best">Show 10</a>
+                <a class="btn" id="show-all">Show All</a>
+        </div>
+    </div>
+
+    <script language="JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.2.1/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!--<script src="nn.js"></script>-->
+    <script src="car.js"></script>
+    <script src="parking.js"></script>
+    <script src="boundary.js"></script>
+    <script src="point.js"></script>
+    <script src="vector.js"></script>
+    <script src="polygon.js"></script>
+    <script src="ray.js"></script>
+    <script src="tensorNN.js"></script>
+    <script src="matrix.js"></script>
+    <script src="player.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
